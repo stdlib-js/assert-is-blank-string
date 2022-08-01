@@ -24,14 +24,30 @@ limitations under the License.
 
 > Test if a value is a blank string.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-blank-string
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import isBlankString from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-blank-string@esm/index.mjs';
+var isBlankString = require( '@stdlib/assert-is-blank-string' );
 ```
 
 #### isBlankString( value )
@@ -59,13 +75,8 @@ bool = isBlankString( 0 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import isBlankString from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-blank-string@esm/index.mjs';
+```javascript
+var isBlankString = require( '@stdlib/assert-is-blank-string' );
 
 var out = isBlankString( '   ' );
 // returns true
@@ -84,17 +95,72 @@ out = isBlankString( 'beep boop' );
 
 out = isBlankString( null );
 // returns false
-
-</script>
-</body>
-</html>
 ```
 
 </section>
 
 <!-- /.examples -->
 
+* * *
 
+<section class="cli">
+
+## CLI
+
+<section class="installation">
+
+## Installation
+
+To use the module as a general utility, install the module globally
+
+```bash
+npm install -g @stdlib/assert-is-blank-string
+```
+
+</section>
+
+<!-- CLI usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```text
+Usage: is-blank-string [options] [<string>]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+### Examples
+
+```bash
+$ is-blank-string baz
+false
+```
+
+To use as a [standard stream][standard-streams],
+
+```bash
+$ echo -n ' \t ' | is-blank-string
+true
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -111,7 +177,7 @@ out = isBlankString( null );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -141,8 +207,8 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/assert-is-blank-string.svg
 [npm-url]: https://npmjs.org/package/@stdlib/assert-is-blank-string
 
-[test-image]: https://github.com/stdlib-js/assert-is-blank-string/actions/workflows/test.yml/badge.svg?branch=v0.0.1
-[test-url]: https://github.com/stdlib-js/assert-is-blank-string/actions/workflows/test.yml?query=branch:v0.0.1
+[test-image]: https://github.com/stdlib-js/assert-is-blank-string/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/assert-is-blank-string/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/assert-is-blank-string/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/assert-is-blank-string?branch=main
