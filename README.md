@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isBlankString from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-blank-string@deno/mod.js';
+import isBlankString from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-blank-string@v0.1.1-deno/mod.js';
 ```
 
 #### isBlankString( value )
@@ -71,7 +71,7 @@ bool = isBlankString( 0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import isBlankString from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-blank-string@deno/mod.js';
+import isBlankString from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-blank-string@v0.1.1-deno/mod.js';
 
 var out = isBlankString( '   ' );
 // returns true
