@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isBlankString from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-blank-string@esm/index.mjs';
+import isBlankString from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-blank-string@v0.2.2-esm/index.mjs';
 ```
 
 #### isBlankString( value )
@@ -76,7 +76,7 @@ bool = isBlankString( 0 );
 <body>
 <script type="module">
 
-import isBlankString from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-blank-string@esm/index.mjs';
+import isBlankString from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-blank-string@v0.2.2-esm/index.mjs';
 
 var out = isBlankString( '   ' );
 // returns true
